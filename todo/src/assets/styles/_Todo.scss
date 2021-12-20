@@ -1,0 +1,23 @@
+.todolist-container {
+  box-shadow: 8px 10px 16px rgba(59, 59, 59, 0.251);
+
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4px;
+  margin: 50px auto;
+  font-size: 1.5rem;
+  background-color: #9ed3ff;
+  border-radius: 10px;
+  width: 70%;
+  word-break: break-all;
+  overflow: auto;
+  align-items: center;
+  li {
+    cursor: pointer;
+    padding: 20px;
+  }
+  .del-icon {
+    color: #d63031;
+    cursor: pointer;
+  }
+}

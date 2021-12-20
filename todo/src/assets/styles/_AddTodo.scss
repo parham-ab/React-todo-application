@@ -1,0 +1,56 @@
+.addtodo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  h1 {
+    background-color: #0652dd;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  .addtodo-box {
+    // width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    input {
+      border: 1px solid #d3d3d3;
+      border-radius: 6px;
+      font-size: 1rem;
+      width: 500px;
+      height: 40px;
+      padding: 10px 5px;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 11px 20px 0px;
+      transition: all 0.2s;
+      @media screen and (max-width: "700px") {
+        width: 300px;
+      }
+      @media screen and (max-width: "314px") {
+        width: 200px;
+      }
+      &:focus {
+        transition: all 0.2s;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+    }
+    button {
+      margin-top: 10px;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #00aa39;
+      transition: all 0.3s;
+      color: #fff;
+      cursor: pointer;
+      &:hover {
+        background-color: #00862d;
+        transition: all 0.3s;
+      }
+    }
+  }
+}
